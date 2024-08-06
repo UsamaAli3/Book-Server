@@ -4,9 +4,9 @@ const express = require("express");
 const connectDB = require("./mongodb");
 const multer = require("multer");
 const Book = require("./module/books.js");
-const PORT = process.env.PORT || 8000;
 
 const app = express();
+const PORT = process.env.PORT || 8000;
 connectDB();
 
 // Add Middelware
